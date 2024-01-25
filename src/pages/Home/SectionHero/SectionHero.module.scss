@@ -1,0 +1,122 @@
+.section_hero {
+  // padding: 233px 0 122px;
+  // padding-top: 35px;
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 65px;
+
+  .container {
+    max-width: 1660px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .hero__container {
+    .hero__content {
+      max-width: 600px;
+    }
+
+    .main_slider {
+      width: 80%;
+      margin: 0 auto;
+
+      .hero_slider {
+        width: 50%;
+        height: 568px;
+        padding: 30px;
+        display: flex !important;
+        align-items: center;
+
+        .slider_header {
+          font-weight: 700;
+          font-size: 41px;
+          color: white;
+        }
+      }
+
+      .slider1 {
+        // background: linear-gradient(#f8b195, #f67280, #c06c84, #6c5b7b, #355c7d);
+        background: url('../../../assets/img/ButtImg/Bunner1.jpg') top no-repeat;
+        background-size: cover;
+      }
+
+      .slider2 {
+        // background: linear-gradient(#fd746c, #ff9068, #ffa469, #ffc469, #ffd369);
+        background: url('../../../assets/img/ButtImg/bunner2.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .slider3 {
+        // background: linear-gradient(7deg, #000000, #678654);
+        background: url('../../../assets/img/ButtImg/bunner3.jpg') center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  .visually_hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+  .slick_next {
+    z-index: 10000;
+  }
+}
+
+.custom_next {
+  right: 19px !important;
+
+  &::before {
+    content: '>' !important;
+    display: block;
+    position: absolute;
+    right: -63px;
+    color: #000 !important;
+    font-size: 65px !important;
+
+    @media (max-width: 1600px) {
+      right: -60px;
+    }
+
+    @media (max-width: 500px) {
+      right: -48px;
+      font-size: 45px !important;
+    }
+  }
+}
+
+.custom_prev {
+  z-index: 10;
+  left: -45px !important;
+
+  &::before {
+    content: '<' !important;
+    display: block;
+    position: absolute;
+    color: #000 !important;
+    font-size: 65px !important;
+
+    @media (max-width: 1600px) {
+      left: -0px;
+    }
+
+    @media (max-width: 1000px) {
+      left: 5px;
+    }
+
+    @media (max-width: 500px) {
+      left: 15px;
+      font-size: 45px !important;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.section_warranty {
+  margin-top: 200px;
+  .container {
+    max-width: 1660px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  .warranty_container {
+    .warranty_header {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 35px;
+      color: #424551;
+      margin: 22px 0 20px;
+    }
+    .warranty_desc {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.1;
+      color: #424551;
+    }
+    .warranty_list {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.1;
+      color: #424551;
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+      .warranty_item {
+        position: relative;
+        &::before {
+          content: 'o';
+          display: block;
+          position: absolute;
+          font-size: 16px;
+          left: -16px;
+          top: 1px;
+        }
+        &:not(:last-child) {
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+}

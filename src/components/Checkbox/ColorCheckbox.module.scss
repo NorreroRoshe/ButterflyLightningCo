@@ -1,0 +1,129 @@
+/* This css is for normalizing styles. You can skip this. */
+// *,
+// *:before,
+// *:after {
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
+
+.new {
+  padding: 10px 1px;
+  max-height: 450px;
+
+  .header__dropdown_wrap_colorcheck {
+    margin-left: 10px;
+    height: 100%;
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 25px;
+      height: 300px;
+      margin-top: 20px;
+
+      .form_group {
+        display: block;
+
+        &:not(:last-child) {
+          margin-bottom: 51px;
+        }
+
+        input {
+          padding: 0;
+          height: initial;
+          width: initial;
+          margin-bottom: 0;
+          display: none;
+          cursor: pointer;
+        }
+
+        label {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          cursor: pointer;
+          font-size: 14px;
+          top: 60px;
+          color: #424551;
+          width: 83.4px;
+
+          span {
+            &:not(:last-child) {
+              margin-bottom: 6px;
+            }
+          }
+
+          &:before {
+            content: '';
+            -webkit-appearance: none;
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            padding: 8px;
+            display: inline-block;
+            position: absolute;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 5px;
+            bottom: 39px;
+            border-radius: 10%;
+            border: 1px solid #424551;
+          }
+        }
+
+        input:checked+label:after {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 51px;
+          left: 32px;
+          width: 16px;
+          height: 16px;
+          // border: px solid #424551;
+          // border-width: 0 2px 2px 0;
+          // transform: rotate(45deg);
+          background: url('../../assets/img/i.webp') center no-repeat;
+          background-size: cover;
+          border-radius: 50%;
+        }
+
+        input:checked+label:before {
+          -webkit-appearance: none;
+          background-size: cover;
+          width: 40px;
+          height: 40px;
+          padding: 8px;
+          display: inline-block;
+          position: absolute;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-right: 5px;
+          bottom: 39px;
+          border-radius: 10%;
+          border: 1px solid #424551;
+        }
+      }
+    }
+  }
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 2px;
+  background-color: #000;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar {
+  &:before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,178 @@
+.section_pay {
+  margin-top: 200px;
+
+  .container {
+    max-width: 1660px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .pay_container {
+    .pay_header {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 35px;
+      color: #424551;
+      margin: 22px 0 20px;
+    }
+
+    .pay_description {
+      margin-bottom: 30px;
+
+      .description_desc {
+        color: #787a80;
+        margin: 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+
+        &:not(:last-child) {
+          margin-bottom: 3px;
+        }
+      }
+    }
+
+    .pay_method {
+      margin-bottom: 50px;
+
+      .pay_method_header {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+
+      .pay_method_beznal {
+        margin-bottom: 30px;
+
+        .method_beznal_title {
+          color: #787a80;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 30px;
+          margin: 0 0 10px;
+          text-transform: initial;
+
+          strong {
+            color: black;
+          }
+        }
+
+        .method_beznal_info {
+          .beznal_info_desc {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #787a80;
+            margin: 0;
+
+            &:not(:last-child) {
+              margin-bottom: 2px;
+            }
+          }
+        }
+      }
+    }
+
+    .pay_cart {
+      .pay_cart_header {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 1.1;
+        color: #424551;
+      }
+
+      .pay_cart_desc {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.1;
+        color: #424551;
+      }
+
+      .pay_cart_img {
+        width: 150px;
+        display: block;
+      }
+
+      .pay_cart_imgbox {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .cart_imgbox_img {
+          width: 100px;
+          height: auto;
+        }
+      }
+
+      .pay_cart_secureimg {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .cart_secureimg_img {
+          width: 100px;
+          height: auto;
+          display: block;
+        }
+      }
+    }
+
+    .pay_rejection {
+      .pay_rejection_header {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 1.1;
+        color: #424551;
+      }
+
+      .pay_rejection_list {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+
+        .pay_rejection_item {
+          list-style-type: circle;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+          color: #787a80;
+          list-style: none;
+          position: relative;
+
+          &:not(:last-child) {
+            margin-bottom: 5px;
+          }
+
+          &::before {
+            content: 'o';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -17px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .pay_desc {
+      font-weight: 400;
+      font-size: 20px;
+      color: #787a80;
+      line-height: 24px;
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 3px;
+      }
+    }
+  }
+}

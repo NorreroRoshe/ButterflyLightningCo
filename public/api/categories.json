@@ -1,0 +1,29 @@
+{
+  "data": [
+        {
+          "id": 1,
+          "name": "Люстры",
+          "slug": "CHANDELIER"
+        },
+        {
+          "id": 2,
+          "name": "Бра",
+          "slug": "SCONCE"
+        },
+        {
+          "id": 3,
+          "name": "Торшеры",
+          "slug": "FLOOR_LAMP"
+        },
+        {
+          "id": 4,
+          "name": "Настольные лампы",
+          "slug": "TABLE_LAMP"
+        },
+        {
+          "id": 5,
+          "name": "Подвесные",
+          "slug": "PENDANT_LIGHT"
+        }
+      ]
+}

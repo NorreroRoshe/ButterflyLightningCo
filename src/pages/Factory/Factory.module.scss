@@ -1,0 +1,42 @@
+.section_collaboration {
+  margin-top: 100px;
+  margin-bottom: -5px;
+
+  @media (max-width: 1150px) {
+    margin-top: 45px;
+  }
+
+  .container {
+    max-width: 1460px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .content_title {
+    font-size: 42px;
+    text-align: center;
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+  }
+
+  td {
+    @media (max-width: 900px) {
+      padding-right: 20px;
+      font-size: 18px;
+      margin-top: -20px;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 15px;
+    }
+  }
+}
+
+.about_head {
+  margin-bottom: 40px;
+}
+
+.about_desc {
+  line-height: 36px;
+}
